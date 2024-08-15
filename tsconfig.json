@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "NodeNext",
+		"lib": [
+			"dom",
+			"dom.iterable",
+			"esnext"
+		],
+		"types": [
+			"node",
+			"dotenv"
+		],
+		"allowJs": true,
+		"moduleResolution": "NodeNext",
+		"outDir": "./dist",
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"esModuleInterop": true,
+		"noImplicitAny": false,
+		"resolveJsonModule": true,
+		"forceConsistentCasingInFileNames": true,
+	},
+	"include": [
+		"src/**/*",
+		"types/**/*"
+	]
+}

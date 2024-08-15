@@ -1,0 +1,30 @@
+{
+	"name": "typescript-console-template",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "Quickstart template for a Typescript console app with VSCode debugging, ESLint etc.",
+	"main": "main.js",
+	"scripts": {
+		"start": "cross-env NODE_ENV=development tsx src/main.ts",
+		"serve": "cross-env NODE_ENV=production node dist/main.js",
+		"lint": "eslint src/**/*.ts",
+		"build": "tsc"
+	},
+	"devDependencies": {
+		"@types/node": "^22.3.0",
+		"@typescript-eslint/eslint-plugin": "^8.1.0",
+		"@typescript-eslint/parser": "^8.1.0",
+		"cross-env": "^7.0.3",
+		"dotenv": "^16.4.5",
+		"tsx": "^4.17.0",
+		"typescript": "^5.5.4"
+	},
+	"dependencies": {},
+	"author": "",
+	"license": "MIT",
+	"homepage": "https://github.com/markAtHub/typescript-console-template#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/markAtHub/typescript-console-template.git"
+	}
+}

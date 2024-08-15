@@ -1,0 +1,103 @@
+{
+	"env": {
+		"es2021": true,
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"@typescript-eslint"
+	],
+	// "rules": {
+	// 	"semi": [
+	// 		"error",
+	// 		"always"
+	// 	],
+	// 	"quotes": [
+	// 		"error",
+	// 		"single"
+	// 	],
+	// 	"no-unused-vars": "off",
+	// 	"@typescript-eslint/no-unused-vars": [
+	// 		"error"
+	// 	]
+	// },
+	"rules": {
+		// force tabs
+		"indent": [
+			2,
+			"tab",
+			{
+				"SwitchCase": 1
+			}
+		],
+
+		// force CRLF and get ESLint to automatically change LF to CRLF
+		"linebreak-style": [
+			2,
+			"windows"
+		],
+
+		// force double quotes
+		"quotes": [
+			2,
+			"double"
+		],
+
+		// force semi-colons
+		"semi": [
+			2,
+			"always"
+		],
+
+		// disable ESLint's crappy no-unused-vars rule which warns for TS interfaces
+		"no-unused-vars": 0,
+
+		// only warn on unused vars rather than error
+		"@typescript-eslint/no-unused-vars": 1,
+
+		// don't error when explicitly declaring a class member's types without defaults
+		"@typescript-eslint/no-inferrable-types": 0,
+
+		// Force "hello" + world to transform to `hello ${world}`
+		"prefer-template": 2,
+
+		"max-params": [2, { "max": 3 }],
+
+		"@typescript-eslint/no-explicit-any": 0,
+
+		"@typescript-eslint/array-type": 0,
+
+		// Combo of props to try and prevent large one-line statements
+		"max-len": [
+			2, {
+				"code": 150,
+				"ignoreUrls": true,
+				"ignoreComments": false,
+				"ignoreStrings": true,
+				"ignoreTemplateLiterals": true,
+				"ignoreRegExpLiterals": true
+			}
+		],
+
+		"@typescript-eslint/no-unnecessary-condition": 0,
+		"@typescript-eslint/dot-notation": 0,
+
+		"@typescript-eslint/explicit-member-accessibility": [
+			"error",
+			{
+				"accessibility": "explicit",
+				"overrides": {
+					"constructors": "off"
+				}
+			}
+		]
+	}
+}
